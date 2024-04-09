@@ -5,10 +5,12 @@ import COLORS from '../constants/colors';
 import { Ionicons } from "@expo/vector-icons";
 import Checkbox from "expo-checkbox"
 import Button from '../components/Button';
+import { useTranslation } from "react-i18next";
 
 const Login = ({ navigation }) => {
     const [isPasswordShown, setIsPasswordShown] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
+    const { t } = useTranslation();
     
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
@@ -20,13 +22,13 @@ const Login = ({ navigation }) => {
                         marginVertical: 12,
                         color: COLORS.black
                     }}>
-                        Oi! Bem-vindo novamente! 👋
+                        {t("login-title")}
                     </Text>
 
                     <Text style={{
                         fontSize: 16,
                         color: COLORS.black
-                    }}>Faça login para entrar</Text>
+                    }}>{t("login-desc")}</Text>
                 </View>
 
                 <View style={{ marginBottom: 12 }}>
@@ -34,7 +36,7 @@ const Login = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>E-mail</Text>
+                    }}>{t("login-email")}</Text>
 
                     <View style={{
                         width: "100%",
@@ -47,7 +49,7 @@ const Login = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Insira seu e-mail'
+                            placeholder={t("login-emailplaceholder")}
                             placeholderTextColor={COLORS.black}
                             keyboardType='email-address'
                             style={{
@@ -62,7 +64,7 @@ const Login = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>Senha</Text>
+                    }}>{t("login-senha")}</Text>
 
                     <View style={{
                         width: "100%",
@@ -75,7 +77,7 @@ const Login = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Insira sua senha'
+                            placeholder={t("login-senhaplaceholder")}
                             placeholderTextColor={COLORS.black}
                             secureTextEntry={isPasswordShown}
                             style={{
@@ -113,11 +115,11 @@ const Login = ({ navigation }) => {
                         color={isChecked ? COLORS.primary : undefined}
                     />
 
-                    <Text>Lembrar minha conta</Text>
+                    <Text>{t("login-lembrarconta")}</Text>
                 </View>
 
                 <Button
-                    title="Fazer login"
+                    title={t("login-login")}
                     filled
                     style={{
                         marginTop: 18,
@@ -134,7 +136,7 @@ const Login = ({ navigation }) => {
                             marginHorizontal: 10
                         }}
                     />
-                    <Text style={{ fontSize: 14 }}>Ou faça login com</Text>
+                    <Text style={{ fontSize: 14 }}>{t("login-loginalternativo")}</Text>
                     <View
                         style={{
                             flex: 1,
@@ -209,7 +211,7 @@ const Login = ({ navigation }) => {
                     justifyContent: "center",
                     marginTop: 22
                 }}>
-                    <Text style={{ fontSize: 16, color: COLORS.black }}>Não possui uma conta?</Text>
+                    <Text style={{ fontSize: 16, color: COLORS.black }}>{t("login-naopossuiconta")}</Text>
                 </View>
 
                 <View style={{
@@ -225,7 +227,7 @@ const Login = ({ navigation }) => {
                             color: COLORS.primary,
                             fontWeight: "bold",
                             marginLeft: 6
-                        }}>Crie sua conta agora</Text>
+                        }}>{t("login-naopossuicontadestaque")}</Text>
                     </Pressable>
                 </View>
 

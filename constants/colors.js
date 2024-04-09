@@ -4,7 +4,8 @@ const COLORS = {
     primary: '#007BFF',
     secundary: '#4DC48A',
     third: '#FFAA00',
-    gray: '#CCCCCC'
+    gray: '#CCCCCC',
+    darkblue: '#023266'
 }
 
 export default COLORS

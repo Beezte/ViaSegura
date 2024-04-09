@@ -7,12 +7,15 @@ import Checkbox from "expo-checkbox"
 import Button from '../components/Button';
 import { TextInputMask } from 'react-native-masked-text';
 import { StatusBar } from 'expo-status-bar';
+import { useTranslation } from "react-i18next";
+
 
 const Signup = ({ navigation }) => {
     const [isPasswordShown, setIsPasswordShown] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
     const [cpf, setCpf] = useState('')
     const [dataNascimento, setDataNascimento] = React.useState('');
+    const { t } = useTranslation();
     
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
@@ -25,13 +28,13 @@ const Signup = ({ navigation }) => {
                         marginVertical: 12,
                         color: COLORS.primary
                     }}>
-                        Crie sua conta
+                        {t("signup-title")}
                     </Text>
 
                     <Text style={{
                         fontSize: 16,
                         color: COLORS.black
-                    }}>Envie denúncias de forma rápida e fácil!</Text>
+                    }}>{t("signup-desc")}</Text>
                 </View>
 
                 {/* NOME COMPLETO */}
@@ -40,7 +43,7 @@ const Signup = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>Nome Completo</Text>
+                    }}>{t("signup-nomecompleto")}</Text>
 
                     <View style={{
                         width: "100%",
@@ -53,7 +56,7 @@ const Signup = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Informe seu nome completo'
+                            placeholder={t("signup-nomecompletoplaceholder")}
                             placeholderTextColor={COLORS.black}
                             keyboardType='default'
                             style={{
@@ -69,7 +72,7 @@ const Signup = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>Nome Social</Text>
+                    }}>{t("signup-nomesocial")}</Text>
 
                     <View style={{
                         width: "100%",
@@ -82,7 +85,7 @@ const Signup = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Informe seu nome social'
+                            placeholder={t("signup-nomesocialplaceholder")}
                             placeholderTextColor={COLORS.black}
                             keyboardType='default'
                             style={{
@@ -98,7 +101,7 @@ const Signup = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>CPF</Text>
+                    }}>{t("signup-cpf")}</Text>
 
                     <View style={{
                         width: "100%",
@@ -114,20 +117,12 @@ const Signup = ({ navigation }) => {
 
                         <TextInputMask 
                           style={{width: "80%"}}
-                          placeholder='Insira seu CPF'
+                          placeholder={t("signup-cpfplaceholder")}
                           placeholderTextColor={COLORS.black}
                           type={'cpf'}
                           value={cpf}
-                          onChangeText={text => setCpf(text)}/>
-
-                        {/* <TextInput
-                            placeholder='Insira seu CPF'
-                            placeholderTextColor={COLORS.black}
-                            keyboardType='numeric'
-                            style={{
-                                width: "80%"
-                            }}
-                        /> */}
+                          onChangeText={text => setCpf(text)}
+                        />
                     </View>
                 </View>
 
@@ -137,7 +132,7 @@ const Signup = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>Data de Nascimento</Text>
+                    }}>{t("signup-datanascimento")}</Text>
 
                     <View style={{
                         width: "100%",
@@ -153,7 +148,7 @@ const Signup = ({ navigation }) => {
 
                     <TextInputMask
                               style={{ width: '80%' }}
-                              placeholder='_ _ / _ _ / _ _ _ _'
+                              placeholder={t("signup-datanascimentoplaceholder")}
                               placeholderTextColor={COLORS.black}
                               keyboardType='numeric'
                               type={'datetime'}
@@ -172,7 +167,7 @@ const Signup = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>E-mail</Text>
+                    }}>{t("signup-email")}</Text>
 
                     <View style={{
                         width: "100%",
@@ -185,7 +180,7 @@ const Signup = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Informe seu e-mail'
+                            placeholder={t("signup-emailplaceholder")}
                             placeholderTextColor={COLORS.black}
                             keyboardType='email-address'
                             style={{
@@ -201,7 +196,7 @@ const Signup = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>Senha</Text>
+                    }}>{t("signup-senha")}</Text>
 
                     <View style={{
                         width: "100%",
@@ -214,7 +209,7 @@ const Signup = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Insira sua senha'
+                            placeholder={t("signup-senhaplaceholder")}
                             placeholderTextColor={COLORS.black}
                             secureTextEntry={isPasswordShown}
                             style={{
@@ -246,7 +241,7 @@ const Signup = ({ navigation }) => {
                         fontSize: 16,
                         fontWeight: 400,
                         marginVertical: 8
-                    }}>Repita sua senha</Text>
+                    }}>{t("signup-repitasenha")}</Text>
 
                     <View style={{
                         width: "100%",
@@ -259,7 +254,7 @@ const Signup = ({ navigation }) => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Repita sua senha'
+                            placeholder={t("signup-repitasenhaplaceholder")}
                             placeholderTextColor={COLORS.black}
                             secureTextEntry={isPasswordShown}
                             style={{
@@ -300,13 +295,13 @@ const Signup = ({ navigation }) => {
                     <Pressable
                         onPress={() => navigation.navigate("Termos")}
                     >
-                    <Text>Eu concordo com os <Text style={{fontFamily: "Inter_700Bold", color: "#007BFF",}}>Termos e Condições</Text></Text>
+                    <Text>{t("signup-termos")}<Text style={{fontFamily: "Inter_700Bold", color: "#007BFF",}}>{t("signup-termosdestaque")}</Text></Text>
                     </Pressable>
                 </View>
 
                 {/* LOGIN */}
                 <Button
-                    title="Entrar"
+                    title={t("signup-cadastrar")}
                     filled
                     style={{
                         marginTop: 18,
@@ -323,7 +318,7 @@ const Signup = ({ navigation }) => {
                             marginHorizontal: 10
                         }}
                     />
-                    <Text style={{ fontSize: 14 }}>Ou crie sua conta com</Text>
+                    <Text style={{ fontSize: 14 }}>{t("signup-cadastroalternativo")}</Text>
                     <View
                         style={{
                             flex: 1,
@@ -400,7 +395,7 @@ const Signup = ({ navigation }) => {
                     justifyContent: "center",
                     marginVertical: 22
                 }}>
-                    <Text style={{ fontSize: 16, color: COLORS.black }}>Já tem uma conta?</Text>
+                    <Text style={{ fontSize: 16, color: COLORS.black }}>{t("signup-possuiconta")}</Text>
                     <Pressable
                         onPress={() => navigation.navigate("Login")}
                     >
@@ -409,7 +404,7 @@ const Signup = ({ navigation }) => {
                             color: COLORS.primary,
                             fontWeight: "bold",
                             marginLeft: 6
-                        }}>Faça Login</Text>
+                        }}>{t("signup-possuicontadestaque")}</Text>
                     </Pressable>
                 </View>
             </View>

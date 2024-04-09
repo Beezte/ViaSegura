@@ -1,20 +1,18 @@
-import {
-  Text,
-  View,
-  StyleSheet,
-  Image,
-  Dimensions,
-  ScrollView,
-} from "react-native";
-import { StatusBar } from 'expo-status-bar'; // Automatically switches bar style based on theme.
+import { Text, View, StyleSheet, Image, Dimensions, ScrollView} from "react-native";
+import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView } from "react-native-safe-area-context";
 import COLORS from '../constants/colors';
 import React, { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
+
 const imageWidth = Dimensions.get("window").width;
 
 const Termos = () => {
+
   const scrollViewRef = useRef(null);
   const [contentHeight, setContentHeight] = useState(0);
+  const { t } = useTranslation();
+
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
