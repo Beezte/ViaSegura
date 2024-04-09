@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Login, Singup, Termos, Welcome, SplashVideo } from './screens'
+import { Login, Signup, Termos, Welcome, SplashVideo } from './screens'
 
 import * as Font from 'expo-font';
 import { useState, useCallback, useEffect } from 'react';
@@ -66,8 +66,8 @@ export default function App() {
           }}
         />
         <Stack.Screen
-          name="Singup"
-          component={Singup}
+          name="Signup"
+          component={Signup}
           options={{
             headerShown: false
           }}

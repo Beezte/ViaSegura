@@ -14,7 +14,7 @@ const Welcome = ( {navigation} ) => {
         
       />
         <Button title="Vamos nessa!"
-        onPress={()=> navigation.navigate("Singup")}
+        onPress={()=> navigation.navigate("Signup")}
         style={{ width: "80%", top:150, backgroundColor: COLORS.white, fontWeight: '900'}} 
         />
       

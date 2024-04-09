@@ -1,6 +1,6 @@
 import Login from "./Login"
 import Welcome from "./Welcome"
-import Singup from "./Singup"
+import Signup from "./Signup"
 import Termos from "./Termos"
 import SplashVideo from "./SplashVideo"
 
@@ -8,7 +8,7 @@ import SplashVideo from "./SplashVideo"
 export {
     Login,
     Welcome,
-    Singup,
+    Signup,
     Termos,
     SplashVideo
 }
