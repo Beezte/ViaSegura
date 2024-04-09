@@ -1,5 +1,4 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Login, Singup, Termos, Welcome } from './screens'
@@ -26,11 +25,13 @@ export default function App() {
           Inter_700Bold,
           Inter_900Black,
         });
+        
+        await SplashScreen.hideAsync();
         // Garante que o tempo mínimo de carregamento seja de 5 segundos
-        setTimeout(async () => {
-          await SplashScreen.hideAsync();
-          setIsReady(true);
-        }, 5000);
+        // setTimeout(async () => {
+        //   await SplashScreen.hideAsync();
+        //   setIsReady(true);
+        // }, 5000);
       } catch (e) {
         console.log(e);
       } finally {
@@ -82,12 +83,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });

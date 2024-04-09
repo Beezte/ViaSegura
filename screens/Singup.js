@@ -313,7 +313,7 @@ const Signup = ({ navigation }) => {
                         marginBottom: 4,
                     }}
                 />
-                {/* LOGIN ALTERNATIVO */}
+                {/* CADASTRO ALTERNATIVO */}
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 20 }}>
                     <View
                         style={{
@@ -323,7 +323,7 @@ const Signup = ({ navigation }) => {
                             marginHorizontal: 10
                         }}
                     />
-                    <Text style={{ fontSize: 14 }}>Ou faça login com</Text>
+                    <Text style={{ fontSize: 14 }}>Ou crie sua conta com</Text>
                     <View
                         style={{
                             flex: 1,
