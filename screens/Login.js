@@ -207,9 +207,16 @@ const Login = ({ navigation }) => {
                 <View style={{
                     flexDirection: "row",
                     justifyContent: "center",
-                    marginVertical: 22
+                    marginTop: 22
                 }}>
                     <Text style={{ fontSize: 16, color: COLORS.black }}>Não possui uma conta?</Text>
+                </View>
+
+                <View style={{
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    marginVertical: 5
+                }}>
                     <Pressable
                         onPress={() => navigation.navigate('Signup')}
                     >
@@ -221,6 +228,7 @@ const Login = ({ navigation }) => {
                         }}>Crie sua conta agora</Text>
                     </Pressable>
                 </View>
+
             </View>
         </SafeAreaView>
     )
