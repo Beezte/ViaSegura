@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Login, Singup, Termos, Welcome } from './screens'
+import { Login, Singup, Termos, Welcome, SplashVideo } from './screens'
 
 import * as Font from 'expo-font';
 import { useState, useCallback, useEffect } from 'react';
@@ -48,13 +48,14 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName='Welcome'
+        initialRouteName='SplashVideo'
       >
         <Stack.Screen
           name="Welcome"
           component={Welcome}
           options={{
-            headerShown: false
+            headerShown: false,
+            animation: 'none'
           }}
         />
         <Stack.Screen
@@ -74,6 +75,14 @@ export default function App() {
         <Stack.Screen
           name="Termos"
           component={Termos}
+          options={{
+            headerShown: false
+          }}
+        />
+
+        <Stack.Screen
+          name="SplashVideo"
+          component={SplashVideo}
           options={{
             headerShown: false
           }}
