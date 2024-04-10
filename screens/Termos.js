@@ -23,102 +23,70 @@ const Termos = () => {
               style={{ ...styles.image, width: imageWidth }}
               resizeMode="contain"
             />
-            <Text style={styles.title}>Termos e Condições</Text>
+            <Text style={styles.title}>{t("termos-title")}</Text>
             <Text style={styles.desc}>
-            Estes Termos e Condições de Uso regem o uso do aplicativo de denúncias
-            de trânsito ("Aplicativo") oferecido pela nossa empresa. Ao acessar ou
-            utilizar o Aplicativo, você concorda em ficar vinculado a estes
-            Termos. Se você não concordar com algum destes Termos, não utilize o
-            Aplicativo.
+            {t("termos-desc")}
             </Text>
 
-            <Text style={styles.subjects}>1. Uso do Aplicativo</Text>
+            <Text style={styles.subjects}>{t("termos-termoumtitle")}</Text>
             <Text style={styles.content}>
-            <Text style={styles.topico}>1.1</Text> Ao usar o Aplicativo, você concorda em fornecer informações
-              verdadeiras, precisas, atuais e completas sobre si mesmo conforme
-              solicitado pelo formulário de denúncia.
+            <Text style={styles.topico}>1.1</Text> {t("termos-termoum11")}
               {"\n"}
               {"\n"}
-              <Text style={styles.topico}>1.2</Text> Você é responsável por manter a confidencialidade de qualquer
-              senha fornecida para acessar o Aplicativo e é totalmente responsável
-              por todas as atividades que ocorrerem sob sua senha.
+              <Text style={styles.topico}>1.2</Text> {t("termos-termoum12")}
               {"\n"}
               {"\n"}
-              <Text style={styles.topico}>1.3</Text> Você concorda em não usar o Aplicativo para qualquer finalidade
-              ilegal ou não autorizada.
+              <Text style={styles.topico}>1.3</Text>  {t("termos-termoum13")}
             </Text>
 
-            <Text style={styles.subjects}>2. Propriedade Intelectual</Text>
+            <Text style={styles.subjects}>{t("termos-termodoistitle")}</Text>
             <Text style={styles.content}>
-            <Text style={styles.topico}>2.1</Text> Todo o conteúdo do Aplicativo, incluindo, mas não se limitando a,
-              texto, gráficos, logotipos, ícones de botões, imagens, clipes de
-              áudio, downloads digitais e compilações de dados, é propriedade da
-              nossa empresa e está protegido pelas leis de direitos autorais e
-              outras leis de propriedade intelectual.
-              {"\n"}{"\n"}
-              <Text style={styles.topico}>2.2</Text> Você concorda em não
-              reproduzir, duplicar, copiar, vender, revender ou explorar qualquer
-              parte do Aplicativo sem a permissão expressa por escrito da nossa
-              empresa.
+            <Text style={styles.topico}>2.1</Text> {t("termos-termodois21")}
+              {"\n"}
+              {"\n"}
+              <Text style={styles.topico}>2.2</Text> {t("termos-termodois22")}
             </Text>
 
-            <Text style={styles.subjects}>3. Limitação de Responsabilidade</Text>
+            <Text style={styles.subjects}>{t("termos-termotrestitle")}</Text>
             <Text style={styles.content}>
-            <Text style={styles.topico}>3.1</Text> O Aplicativo é fornecido "no estado em que se encontra" e
-              "conforme disponível" sem garantias de qualquer tipo, expressas ou
-              implícitas.
-              {"\n"}{"\n"}
-              <Text style={styles.topico}>3.2</Text> A nossa empresa não será responsável por quaisquer
-              danos diretos, indiretos, incidentais, especiais, consequenciais ou
-              exemplares resultantes do uso ou incapacidade de uso do Aplicativo.
+            <Text style={styles.topico}>3.1</Text> {t("termos-termotres31")}
+              {"\n"}
+              {"\n"}
+              <Text style={styles.topico}>3.2</Text> {t("termos-termotres32")}
             </Text>
 
-            <Text style={styles.subjects}>4. Modificações nos Termos</Text>
+            <Text style={styles.subjects}>{t("termos-termoquatrotitle")}</Text>
             <Text style={styles.content}>
-            <Text style={styles.topico}>4.1</Text> Reservamo-nos o direito de modificar estes Termos a qualquer
-              momento. A versão revisada dos Termos entrará em vigor assim que for
-              publicada no Aplicativo.
-              {"\n"}{"\n"}
-              <Text style={styles.topico}>4.2</Text> Ao continuar a acessar ou usar o
-              Aplicativo após as modificações entrarem em vigor, você concorda em
-              ficar vinculado aos Termos revisados.
+            <Text style={styles.topico}>4.1</Text> {t("termos-termoquatro41")}
+              {"\n"}
+              {"\n"}
+              <Text style={styles.topico}>4.2</Text> {t("termos-termoquatro42")}
             </Text>
 
-            <Text style={styles.subjects}>5. Privacidade</Text>
+            <Text style={styles.subjects}>{t("termos-termocincotitle")}</Text>
             <Text style={styles.content}>
-            <Text style={styles.topico}>5.1</Text> Ao usar o Aplicativo, você concorda com a coleta, uso e divulgação
-              de suas informações pessoais de acordo com nossa Política de
-              Privacidade.
-              {"\n"}{"\n"}
-              <Text style={styles.topico}>5.2</Text> Nossa empresa se compromete a proteger a privacidade
-              dos usuários e a manter suas informações pessoais confidenciais.
+            <Text style={styles.topico}>5.1</Text> {t("termos-termocinco51")}
+              {"\n"}
+              {"\n"}
+              <Text style={styles.topico}>5.2</Text> {t("termos-termocinco52")}
             </Text>
 
-            <Text style={styles.subjects}>6. Denúncias de Trânsito</Text>
+            <Text style={styles.subjects}>{t("termos-termoseistitle")}</Text>
             <Text style={styles.content}>
-            <Text style={styles.topico}>6.1</Text> As denúncias de trânsito enviadas através do Aplicativo serão
-              analisadas pela equipe responsável, que tomará as medidas adequadas de
-              acordo com as políticas e regulamentos aplicáveis.
-              {"\n"}{"\n"}
-              <Text style={styles.topico}>6.2</Text> Você reconhece
-              e concorda que a nossa empresa não garante ações específicas com base
-              em qualquer denúncia enviada pelo Aplicativo.
+            <Text style={styles.topico}>6.1</Text> {t("termos-termoseis61")}
+              {"\n"}
+              {"\n"}
+              <Text style={styles.topico}>6.2</Text> {t("termos-termoseis62")}
             </Text>
 
-            <Text style={styles.subjects}>7. Contato</Text>
+            <Text style={styles.subjects}>{t("termos-termosetetitle")}</Text>
             <Text style={styles.contentfinal}>
-            <Text style={styles.topico}>7.1</Text> Se você tiver alguma dúvida ou preocupação sobre estes Termos ou
-              sobre o Aplicativo, entre em contato conosco através dos meios de
-              contato disponíveis no Aplicativo. Estes são os Termos e Condições de
-              Uso completos para o nosso aplicativo de denúncias de trânsito. Se
-              você tiver alguma dúvida ou precisar de esclarecimentos adicionais,
-              não hesite em nos contatar.
+            <Text style={styles.topico}>7.1</Text> {t("termos-termosete71")}
             </Text>
 
             <Text style={styles.disclaimer}>
-              A ViaSegura reserva-se o direito de realizar alterações nos{" "}
-              <Text style={styles.destaque}>Termos e Condições</Text> sempre que
-              achar necessário.
+              {t("termos-disclaimer")}{" "}
+              <Text style={styles.destaque}>{t("termos-disclaimerdestaque")}</Text> {t("termos-disclaimercontinuacao")}
             </Text>
           </View>
         <StatusBar style="dark" />
