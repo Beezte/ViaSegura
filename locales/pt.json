@@ -4,6 +4,8 @@
     "welcome-subslogan": "O que acha de mantermos o transito seguro",
     "welcome-subslogandestaque": " juntos?",
     "welcome-continuarbtn": "Vamos nessa!",
+    "welcome-jatenhoconta": "Já possui uma conta?",
+    "welcome-jatenhocontalogin": "Fazer login agora",
     "lang-header": "Configurações de Idioma",
     "lang-desc": "Personalize a experiência do aplicativo selecionando o idioma de sua preferência.",
     "signup-title": "Crie sua conta",
@@ -73,5 +75,55 @@
     
     "termos-disclaimer": "A ViaSegura reserva-se o direito de realizar alterações nos",
     "termos-disclaimerdestaque": "Termos e Condições",
-    "termos-disclaimercontinuacao": "sempre que achar necessário."
+    "termos-disclaimercontinuacao": "sempre que achar necessário.",
+
+    "home-title": "Envie uma denúncia 🚔",
+    "home-desc": "Nosso aplicativo simplifica o processo de envio de denúncias de trânsito. Ajude a melhorar a segurança nas ruas reportando infrações com facilidade e rapidez. Sua contribuição faz a diferença!",
+    "home-denuncia-tipo": "Selecione o tipo da denúncia",
+    "home-denuncia-tipoplaceholder": "▼ Escolha o tipo da denúncia",
+    "home-denuncia-descrevaocorrido": "Descreva o ocorrido",
+    "home-denuncia-descrevaocorridoplaceholder": "Descreva o ocorrido com o máximo de detalhes",
+    "home-denuncia-local": "Local do ocorrido",
+    "home-denuncia-localplaceholder": "Insira o local onde o ato aconteceu",
+    "home-denuncia-data": "Data do ocorrido",
+    "home-denuncia-dataplaceholder": "dd/mm/aaaa",
+    "home-denuncia-provas": "Adicione provas do ocorrido",
+    "home-denuncia-provadesc": "Escolher imagens da galeria",
+    "home-denuncia-provamaisimagem": "Adicionar mais imagens",
+    "home-denuncia-enviar": "Enviar denúncia",
+
+    "home-denuncia-motivos-1": "🚧 Obstrução na via",
+    "home-denuncia-motivos-2": "🕳️ Buracos",
+    "home-denuncia-motivos-3": "🚗 Engarrafamento",
+    "home-denuncia-motivos-4": "🚦 Sinais de trânsito quebrados",
+    "home-denuncia-motivos-5": "🚶‍♂️ Falta de passagem para pedestres",
+    "home-denuncia-motivos-6": "🔦 Iluminação insuficiente na via",
+    "home-denuncia-motivos-7": "♿ Falta de acessibilidade",
+    "home-denuncia-motivos-8": "🅿️ Veículos estacionados de forma irregular",
+    "home-denuncia-motivos-9": "🗑️ Entulho ou lixo nas vias",
+
+    "home-denuncia-modalpreview-title":"Previsualização",
+    "home-denuncia-modalpreview-fechar":"Fechar previsualização",
+
+    "home-denuncia-historico-title": "Seu histórico de denúncias",
+    "home-denuncia-historico-desc": "Veja abaixo o histórico de todas as suas denúncias anteriores.",
+    "home-denuncia-historico-motivo": "Motivo: ",
+    "home-denuncia-historico-acusado": "Acusado: ",
+    "home-denuncia-historico-dataocorrido": "Data do ocorrido: ",
+    "home-denuncia-historico-status": "Situação: "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

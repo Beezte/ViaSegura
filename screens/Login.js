@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { SafeAreaView } from "react-native-safe-area-context";
 import COLORS from '../constants/colors';
 import { Ionicons } from "@expo/vector-icons";
+import { StatusBar } from 'expo-status-bar';
 import Checkbox from "expo-checkbox"
 import Button from '../components/Button';
 import { useTranslation } from "react-i18next";
@@ -125,6 +126,7 @@ const Login = ({ navigation }) => {
                         marginTop: 18,
                         marginBottom: 4,
                     }}
+                    onPress={() => navigation.navigate("Home")}
                 />
 
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 20 }}>
@@ -230,7 +232,7 @@ const Login = ({ navigation }) => {
                         }}>{t("login-naopossuicontadestaque")}</Text>
                     </Pressable>
                 </View>
-
+                <StatusBar style="dark" />
             </View>
         </SafeAreaView>
     )

@@ -50,6 +50,11 @@ const Welcome = ({ navigation }) => {
         style={styles.button}
       />
 
+      <Text style={{ fontFamily: 'Inter_300Light', color: COLORS.white, marginTop: 20, textAlign: "center" }}>{t("welcome-jatenhoconta")}</Text>
+      <TouchableOpacity onPress={() => navigation.navigate("Login")}>
+      <Text style={{ fontFamily: 'Inter_700Bold', color: COLORS.white, textAlign: "center", marginTop: 5, fontSize: 16 }}>{t("welcome-jatenhocontalogin")}</Text>
+      </TouchableOpacity>
+      
         <Modal visible={visible} onRequestClose={() => setVisible(false)}>
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.primary }}>
           <View style={styles.languagesList}>
