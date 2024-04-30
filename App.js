@@ -29,7 +29,6 @@ export default function App() {
         });
         
         await SplashScreen.hideAsync();
-        // Garante que o tempo mínimo de carregamento seja de 5 segundos
         // setTimeout(async () => {
         //   await SplashScreen.hideAsync();
         //   setIsReady(true);

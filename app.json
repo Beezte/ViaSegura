@@ -3,7 +3,7 @@
     "name": "ViaSegura",
     "slug": "ViaSegura",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon-viasegura.png",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -20,6 +20,7 @@
     },
     "android": {
       "adaptiveIcon": {
+        "orientation": "portrait",
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
